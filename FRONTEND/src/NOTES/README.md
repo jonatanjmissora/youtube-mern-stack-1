@@ -35,6 +35,10 @@ en HomePage listamos las notas que traemos del BACKEND "http://localhost:5001/ap
 
 instalamos el cors en el backend para permitir acceso de distinto dominio
 
+creamos el create y detail page.
+
+luego vemos como modifiamos los comandos para hacer el deploy, en la ultima parte del video
+
 
 
 
