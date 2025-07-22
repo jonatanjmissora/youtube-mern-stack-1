@@ -1,0 +1,32 @@
+
+@baseUrl = http://localhost:5001/api/notes
+
+GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/6835f6ff1215b52f909844b7
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "title": "this is the 5?",
+    "content": "I think so"
+}
+
+###
+
+DELETE {{baseUrl}}/6835f77e1215b52f909844ba
+
+###
+
+PUT {{baseUrl}}/687eede9ff3132d797c6ca1f
+Content-Type: application/json
+
+{
+    "title": "this is the 6?",
+    "content": "updated"
+}

@@ -1,0 +1,3 @@
+.page-layout {
+    @apply min-h-full sm:max-w-4xl 2xl:max-w-7xl h-full mx-auto flex flex-col px-6;
+}
