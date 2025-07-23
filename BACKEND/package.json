@@ -17,5 +17,8 @@
     "express": "^4.18.2",
     "mongoose": "^8.15.0",
     "youtube-mern-stack": "file:.."
+  },
+  "peerDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.45.1"
   }
 }

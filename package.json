@@ -18,5 +18,8 @@
     "url": "https://github.com/jonatanjmissora/youtube-mern-stack-1/issues"
   },
   "homepage": "https://github.com/jonatanjmissora/youtube-mern-stack-1#readme",
-  "description": ""
+  "description": "",
+  "peerDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.45.1"
+  }
 }
