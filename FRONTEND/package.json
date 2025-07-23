@@ -17,7 +17,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.4.1",
-    "react-router": "^7.6.0"
+    "react-router": "^7.6.0",
+    "youtube-mern-stack": "file:.."
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.78.0",
@@ -31,6 +32,6 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.3.3",
-    "vite": "^5.1.6"
+    "vite": "^6.3.5"
   }
 }

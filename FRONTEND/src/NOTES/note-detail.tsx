@@ -41,7 +41,7 @@ const UpdateNoteForm = ({ note }: { note: NoteType | undefined }) => {
   const navigate = useNavigate()
   if (!note) return <span>No existe nota</span>
 
-  const [, formAction] = useActionState(async (prevState: null, formData: FormData) => {
+  const [, formAction] = useActionState(async (_prevState: null, formData: FormData) => {
     const { title, content } = Object.fromEntries(formData.entries())
     if (!title.toString().trim() || !content.toString().trim()) {
       toast.error("Completa todos los campos")

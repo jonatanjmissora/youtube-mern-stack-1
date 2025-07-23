@@ -3,11 +3,13 @@ export type newNoteType = {
     content: string;
   }
   
+const baseUrl = import.meta.env.MODE === "development" ? "http://localhost:5001/api" : "/api"
+
   export const fetchApi = {
   
     getNote: async (id: string) => {
       try {
-        const data = await fetch(`http://localhost:5001/api/notes/${id}`, {
+        const data = await fetch(`${baseUrl}/notes/${id}`, {
           method: "GET",
         })
         const note = await data.json()
@@ -21,7 +23,7 @@ export type newNoteType = {
   
     getNotes: async () => {
       try {
-        const data = await fetch(`http://localhost:5001/api/notes/`, {
+        const data = await fetch(`${baseUrl}/notes/`, {
           method: "GET",
         })
         const notes = await data.json()
@@ -35,7 +37,7 @@ export type newNoteType = {
   
     createNote: async (newNote: newNoteType) => {
       try {
-        const res = await fetch(`http://localhost:5001/api/notes/`, {
+        const res = await fetch(`${baseUrl}/notes/`, {
           method: "POST",
           headers: {
             'Content-Type': 'application/json'
@@ -53,7 +55,7 @@ export type newNoteType = {
   
     deleteNote: async (id: string) => {
       try {
-        const res = await fetch(`http://localhost:5001/api/notes/${id}`, {
+        const res = await fetch(`${baseUrl}/notes/${id}`, {
           method: "DELETE",
         })
         const deletedNote = await res.json()
@@ -66,7 +68,7 @@ export type newNoteType = {
   
     updateNote: async (id: string, newNote: {title: string, content: string}) => {
       try {
-        const res = await fetch(`http://localhost:5001/api/notes/${id}`, {
+        const res = await fetch(`${baseUrl}/notes/${id}`, {
           method: "PUT",
           headers: {
             'Content-Type': 'application/json'

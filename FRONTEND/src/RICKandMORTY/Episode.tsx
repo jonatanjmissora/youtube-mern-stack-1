@@ -18,8 +18,8 @@ function Episode() {
       <div>{data.air_date}</div>
       <br />
       <div >Characters</div>
-      {data.characters.map((character: any) => {
-        const characterUrlParts = character.split('/').filter(Boolean)
+      {data.characters.map((character: {arg: any, id: string}) => {
+        const characterUrlParts = character.arg.split('/').filter(Boolean)
         const characterId = characterUrlParts[characterUrlParts.length - 1]
         return <Character id={characterId} key={characterId} />
       })}
@@ -27,7 +27,7 @@ function Episode() {
   )
 }
 
-function Character({ id }) {
+function Character({ id }: { id: string }) {
   const { data, status } = useQuery({
     queryKey: ['character', id],
     queryFn: async () => {
