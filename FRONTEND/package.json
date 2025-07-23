@@ -33,5 +33,9 @@
     "tailwindcss": "^4.1.7",
     "typescript": "^5.3.3",
     "vite": "^6.3.5"
-  }
+  },
+  "trustedDependencies": [
+    "@swc/core",
+    "@tailwindcss/oxide"
+  ]
 }
