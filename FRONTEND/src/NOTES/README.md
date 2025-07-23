@@ -97,6 +97,8 @@ const baseUrl = import.meta.env.MODE === "development" ? "http://localhost:5001/
 volvemos a corregir
 NODE_ENV=development para subirlo a github, y porque en versel, no se va a usar esta variable
 
+y...
+
 
 
 
